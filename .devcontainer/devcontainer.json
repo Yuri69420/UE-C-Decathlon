@@ -1,0 +1,26 @@
+{
+  "name": "Decathlon SportMatch (Bun Dev)",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "postCreateCommand": "bun install",
+  "runArgs": ["--network=host"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "extensions": [
+        "oven.bun-vscode",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag"
+      ]
+    }
+  },
+  "forwardPorts": [5173],
+  "remoteUser": "bun"
+}
