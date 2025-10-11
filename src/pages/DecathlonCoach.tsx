@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function DecathlonCoach({
   navigate,
 }: {
-  navigate: (page: any) => void;
+  navigate: (page: unknown) => void;
 }) {
   const [showSplash, setShowSplash] = useState(true);
   const [index, setIndex] = useState(0);

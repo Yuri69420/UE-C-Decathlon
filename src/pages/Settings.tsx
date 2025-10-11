@@ -5,7 +5,7 @@ import BottomNav from "../components/BottomNav";
 export default function Settings({
   navigate,
 }: {
-  navigate: (page: any) => void;
+  navigate: (page: unknown) => void;
 }) {
   const [sports, setSports] = useState<string[]>([]);
   const [name, setName] = useState("");
